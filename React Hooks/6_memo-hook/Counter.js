@@ -12,6 +12,7 @@ function Counter() {
 		setCounterTwo(counterTwo + 1)
   }
 
+  // Unlike useCallback this memoizes the return value of the function
   const isEven = useMemo(() => {
     let i = 0
     while (i < 2000000000) i++
